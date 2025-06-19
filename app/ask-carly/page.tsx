@@ -19,7 +19,7 @@ export default function AskCarlyPage() {
         {mockMessages.map((msg, idx) => (
           <div
             key={idx}
-            className={\`max-w-[80%] p-2 rounded-lg \${msg.from === 'user' ? 'bg-blue-100 self-end ml-auto' : 'bg-gray-100'}\`}
+            className={\`max-w-[80%] p-2 rounded-lg ${msg.from === 'user' ? 'bg-blue-100 self-end ml-auto' : 'bg-gray-100'}\`}
           >
             {msg.text}
           </div>
